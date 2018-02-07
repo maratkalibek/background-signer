@@ -1,0 +1,14 @@
+#!/bin/bash
+
+addgroup --system ${groupName}
+adduser --system --ingroup ${groupName} ${userName}
+
+if [[ ! -d /opt/${project.build.finalName} ]]; then
+    mkdir -p /opt/${project.build.finalName}
+    chown -R ${userName}:${groupName} /opt/${project.build.finalName}
+fi
+
+if [[ ! -d /var/log/${project.build.finalName} ]]; then
+    mkdir -p /var/log/${project.build.finalName}
+    chown -R ${userName}:${groupName} /var/log/${project.build.finalName}
+fi

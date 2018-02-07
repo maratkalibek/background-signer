@@ -1,0 +1,8 @@
+#!/bin/bash
+
+chmod +x /opt/${project.build.finalName}/${project.build.finalName}.${project.packaging}
+
+systemctl enable ${project.build.finalName}
+systemctl daemon-reload
+
+service ${project.build.finalName} restart

@@ -1,0 +1,12 @@
+server:
+  port: 8083
+
+spring:
+  datasource:
+    url: jdbc:postgresql:s1
+    username: s1
+    password: s1
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update

@@ -1,0 +1,8 @@
+/s1-api/target/
+/s1-api/.idea/
+/s1-api/*.iws
+/s1-api/*.iml
+/s1-api/*.ipr
+
+/s1-web/node_modules/**
+/s1-web/dist/**

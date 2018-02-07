@@ -1,0 +1,7 @@
+Package: ${project.build.finalName}
+Version: ${buildNumber}
+Section: misc
+Priority: low
+Architecture: all
+Description: ${project.description}
+Maintainer: info@idsoftware.kz

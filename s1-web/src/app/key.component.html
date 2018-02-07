@@ -1,0 +1,22 @@
+<div class="m-3">
+  <form class="form">
+    <div class="form-group">
+      <button class="btn btn-primary" (click)="selectCertificate()">Выбрать ЭЦП</button>
+    </div>
+    <div class="form-group">
+      <label>Ключ</label>
+      <input type="text" class="form-control" disabled="true" [(ngModel)]="path" name="path">
+    </div>
+    <div class="form-group" *ngIf="path">
+      <label>Пароль</label>
+      <input type="text" class="form-control" [(ngModel)]="password" name="password">
+    </div>
+    <div class="form-group" *ngIf="path">
+      <button class="btn btn-primary" (click)="showSubject()">Показать данные ключа</button>
+    </div>
+    <div class="form-group" *ngIf="subject">
+      <label>ИИН в ключе</label>
+      <input type="text" class="form-control" [(ngModel)]="subject" name="subject">
+    </div>
+  </form>
+</div>
